@@ -1,0 +1,1185 @@
+import React from "react";
+import img1 from "./img1.png";
+
+const Herosection = () => {
+  return (
+    <div>
+      <div className="w-[1903px] h-[3384px] relative bg-white">
+        <div className="w-3.5 h-3.5 left-[1031px] top-[267px] absolute" />
+        <div className="w-[1753px] h-[620px] left-[75px] top-[948px] absolute bg-[#090d1f]" />
+        <div className="w-[1677px] h-[512px] px-8 left-[113px] top-[1001px] absolute flex-col justify-start items-start gap-8 inline-flex">
+          <div className="self-stretch text-white text-2xl font-semibold font-['Inter'] leading-loose">
+            Recent blog posts
+          </div>
+          <img
+            className="absolute z-10 w-[650px] h-[423px] top-[-700px] left-[1105px]"
+            src="https://images.surferseo.art/0b8dae40-86e9-4021-b509-13068309703a.png"
+          ></img>
+          <div className="self-stretch justify-start items-start gap-8 inline-flex">
+            <div className="grow shrink basis-0 self-stretch flex-col justify-start items-start gap-8 inline-flex">
+              <img className="h-[228px] relative" src={img1} />
+              <div className="self-stretch h-[172px] flex-col justify-start items-start gap-6 flex">
+                <div className="self-stretch h-[124px] flex-col justify-start items-start gap-3 flex">
+                  <div className="self-stretch text-[#6840c6] text-sm font-semibold font-['Inter'] leading-tight">
+                    Sunday , 1 Jan 2023
+                  </div>
+                  <div className="self-stretch justify-start items-start gap-4 inline-flex">
+                    <div className="grow shrink basis-0 text-white text-2xl font-semibold font-['Inter'] leading-loose">
+                      UX review presentations
+                    </div>
+                    <div className="pt-1 flex-col justify-start items-start inline-flex">
+                      <div className="w-6 h-6 relative  overflow-hidden" />
+                    </div>
+                  </div>
+                  <div className="w-[461px] text-[#c0c5d0] text-base font-normal font-['Inter'] leading-normal">
+                    How do you create compelling presentations that wow your
+                    colleagues and impress your managers?
+                  </div>
+                </div>
+                <div className="self-stretch justify-start items-start gap-2 inline-flex">
+                  <div className="mix-blend-lighten justify-start items-start flex">
+                    <div className="px-2.5 py-0.5 bg-[#f9f5ff] rounded-2xl justify-center items-center flex">
+                      <div className="text-center text-[#6840c6] text-sm font-medium font-['Inter'] leading-tight">
+                        Design
+                      </div>
+                    </div>
+                  </div>
+                  <div className="mix-blend-lighten justify-start items-start flex">
+                    <div className="px-2.5 py-0.5 bg-[#eef3ff] rounded-2xl justify-center items-center flex">
+                      <div className="text-center text-[#6840c6] text-sm font-medium font-['Inter'] leading-tight">
+                        Research
+                      </div>
+                    </div>
+                  </div>
+                  <div className="mix-blend-lighten justify-start items-start flex">
+                    <div className="px-2.5 py-0.5 bg-[#fdf1f9] rounded-2xl justify-center items-center flex">
+                      <div className="text-center text-[#6840c6] text-sm font-medium font-['Inter'] leading-tight">
+                        Presentation
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="grow shrink basis-0 flex-col justify-center items-start gap-8 inline-flex">
+              <div className="self-stretch justify-start items-start gap-6 inline-flex">
+                <img
+                  className="w-80 h-[200px] relative"
+                  src="https://via.placeholder.com/320x200"
+                />
+                <div className="grow shrink basis-0 flex-col justify-start items-start gap-6 inline-flex">
+                  <div className="self-stretch h-[116px] flex-col justify-start items-start gap-3 flex">
+                    <div className="self-stretch text-[#6840c6] text-sm font-semibold font-['Inter'] leading-tight">
+                      Sunday , 1 Jan 2023
+                    </div>
+                    <div className="self-stretch h-[84px] flex-col justify-start items-start gap-2 flex">
+                      <div className="self-stretch text-white text-lg font-semibold font-['Inter'] leading-7">
+                        Migrating to Linear 101
+                      </div>
+                      <div className="self-stretch text-[#c0c5d0] text-base font-normal font-['Inter'] leading-normal">
+                        Linear helps streamline software projects, sprints,
+                        tasks, and bug tracking. Here’s how to get...
+                      </div>
+                    </div>
+                  </div>
+                  <div className="self-stretch justify-start items-start gap-2 inline-flex">
+                    <div className="mix-blend-lighten justify-start items-start flex">
+                      <div className="px-2.5 py-0.5 bg-sky-50 rounded-2xl justify-center items-center flex">
+                        <div className="text-center text-[#6840c6] text-sm font-medium font-['Inter'] leading-tight">
+                          Design
+                        </div>
+                      </div>
+                    </div>
+                    <div className="mix-blend-lighten justify-start items-start flex">
+                      <div className="px-2.5 py-0.5 bg-[#fdf1f9] rounded-2xl justify-center items-center flex">
+                        <div className="text-center text-[#6840c6] text-sm font-medium font-['Inter'] leading-tight">
+                          Research
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="self-stretch justify-start items-start gap-6 inline-flex">
+                <img
+                  className="w-80 h-[200px] relative"
+                  src="https://via.placeholder.com/320x200"
+                />
+                <div className="grow shrink basis-0 flex-col justify-start items-start gap-6 inline-flex">
+                  <div className="self-stretch h-[116px] flex-col justify-start items-start gap-3 flex">
+                    <div className="self-stretch text-[#6840c6] text-sm font-semibold font-['Inter'] leading-tight">
+                      Sunday , 1 Jan 2023
+                    </div>
+                    <div className="self-stretch h-[84px] flex-col justify-start items-start gap-2 flex">
+                      <div className="self-stretch text-white text-lg font-semibold font-['Inter'] leading-7">
+                        Building your API Stack
+                      </div>
+                      <div className="self-stretch text-[#c0c5d0] text-base font-normal font-['Inter'] leading-normal">
+                        The rise of RESTful APIs has been met by a rise in tools
+                        for creating, testing, and manag...
+                      </div>
+                    </div>
+                  </div>
+                  <div className="self-stretch justify-start items-start gap-2 inline-flex">
+                    <div className="mix-blend-lighten justify-start items-start flex">
+                      <div className="px-2.5 py-0.5 bg-[#ebfdf2] rounded-2xl justify-center items-center flex">
+                        <div className="text-center text-[#6840c6] text-sm font-medium font-['Inter'] leading-tight">
+                          Design
+                        </div>
+                      </div>
+                    </div>
+                    <div className="mix-blend-lighten justify-start items-start flex">
+                      <div className="px-2.5 py-0.5 bg-[#fdf1f9] rounded-2xl justify-center items-center flex">
+                        <div className="text-center text-[#6840c6] text-sm font-medium font-['Inter'] leading-tight">
+                          Research
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="h-[1121px] px-8 left-[150px] top-[1619px] absolute flex-col justify-start items-start gap-[30px] inline-flex">
+          <div className="self-stretch text-black text-2xl font-semibold font-['Inter'] leading-loose">
+            All blog posts
+          </div>
+          <div className="self-stretch h-[968px] flex-col justify-start items-start gap-12 flex">
+            <div className="self-stretch justify-center items-start gap-8 inline-flex">
+              <div className="grow shrink basis-0 flex-col justify-start items-start gap-8 inline-flex">
+                <img
+                  className="h-60 relative"
+                  src="https://via.placeholder.com/492x240"
+                />
+                <div className="self-stretch h-[172px] flex-col justify-start items-start gap-6 flex">
+                  <div className="self-stretch h-[124px] flex-col justify-start items-start gap-3 flex">
+                    <div className="self-stretch text-[#6840c6] text-sm font-semibold font-['Inter'] leading-tight">
+                      Sunday , 1 Jan 2023
+                    </div>
+                    <div className="self-stretch justify-start items-start gap-4 inline-flex">
+                      <div className="grow shrink basis-0 text-black text-2xl font-semibold font-['Inter'] leading-loose">
+                        Bill Walsh leadership lessons
+                      </div>
+                      <div className="pt-1 flex-col justify-start items-start inline-flex">
+                        <div className="w-6 h-6 relative  overflow-hidden" />
+                      </div>
+                    </div>
+                    <div className="self-stretch text-black text-base font-normal font-['Inter'] leading-normal">
+                      Like to know the secrets of transforming a 2-14 team into
+                      a 3x Super Bowl winning Dynasty?
+                    </div>
+                  </div>
+                  <div className="self-stretch justify-start items-start gap-2 inline-flex">
+                    <div className="mix-blend-lighten justify-start items-start flex">
+                      <div className="px-2.5 py-0.5 bg-[#f9f5ff] rounded-2xl justify-center items-center flex">
+                        <div className="text-center text-[#6840c6] text-sm font-medium font-['Inter'] leading-tight">
+                          Leadership
+                        </div>
+                      </div>
+                    </div>
+                    <div className="mix-blend-lighten justify-start items-start flex">
+                      <div className="px-2.5 py-0.5 bg-[#f8f8fb] rounded-2xl justify-center items-center flex">
+                        <div className="text-center text-[#353e72] text-sm font-medium font-['Inter'] leading-tight">
+                          Management
+                        </div>
+                      </div>
+                    </div>
+                    <div className="mix-blend-lighten justify-start items-start flex">
+                      <div className="px-2.5 py-0.5 bg-[#fdf1f9] rounded-2xl justify-center items-center flex">
+                        <div className="text-center text-[#c01573] text-sm font-medium font-['Inter'] leading-tight">
+                          Presentation
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="grow shrink basis-0 flex-col justify-start items-start gap-8 inline-flex">
+                <img
+                  className="h-60 relative"
+                  src="https://via.placeholder.com/492x240"
+                />
+                <div className="self-stretch h-[172px] flex-col justify-start items-start gap-6 flex">
+                  <div className="self-stretch h-[124px] flex-col justify-start items-start gap-3 flex">
+                    <div className="self-stretch text-[#6840c6] text-sm font-semibold font-['Inter'] leading-tight">
+                      Sunday , 1 Jan 2023
+                    </div>
+                    <div className="self-stretch justify-start items-start gap-4 inline-flex">
+                      <div className="grow shrink basis-0 text-black text-2xl font-semibold font-['Inter'] leading-loose">
+                        PM mental models
+                      </div>
+                      <div className="pt-1 flex-col justify-start items-start inline-flex">
+                        <div className="w-6 h-6 relative  overflow-hidden" />
+                      </div>
+                    </div>
+                    <div className="self-stretch text-black text-base font-normal font-['Inter'] leading-normal">
+                      Mental models are simple expressions of complex processes
+                      or relationships.
+                    </div>
+                  </div>
+                  <div className="self-stretch justify-start items-start gap-2 inline-flex">
+                    <div className="mix-blend-lighten justify-start items-start flex">
+                      <div className="px-2.5 py-0.5 bg-sky-50 rounded-2xl justify-center items-center flex">
+                        <div className="text-center text-[#016aa2] text-sm font-medium font-['Inter'] leading-tight">
+                          Product
+                        </div>
+                      </div>
+                    </div>
+                    <div className="mix-blend-lighten justify-start items-start flex">
+                      <div className="px-2.5 py-0.5 bg-[#eef3ff] rounded-2xl justify-center items-center flex">
+                        <div className="text-center text-[#3537cc] text-sm font-medium font-['Inter'] leading-tight">
+                          Research
+                        </div>
+                      </div>
+                    </div>
+                    <div className="mix-blend-lighten justify-start items-start flex">
+                      <div className="px-2.5 py-0.5 bg-[#fff5ed] rounded-2xl justify-center items-center flex">
+                        <div className="text-center text-[#c3320a] text-sm font-medium font-['Inter'] leading-tight">
+                          Frameworks
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="grow shrink basis-0 flex-col justify-start items-start gap-8 inline-flex">
+                <img
+                  className="h-60 relative"
+                  src="https://via.placeholder.com/492x240"
+                />
+                <div className="self-stretch h-[172px] flex-col justify-start items-start gap-6 flex">
+                  <div className="self-stretch h-[124px] flex-col justify-start items-start gap-3 flex">
+                    <div className="self-stretch text-[#6840c6] text-sm font-semibold font-['Inter'] leading-tight">
+                      Sunday , 1 Jan 2023
+                    </div>
+                    <div className="self-stretch justify-start items-start gap-4 inline-flex">
+                      <div className="grow shrink basis-0 text-black text-2xl font-semibold font-['Inter'] leading-loose">
+                        What is Wireframing?
+                      </div>
+                      <div className="pt-1 flex-col justify-start items-start inline-flex">
+                        <div className="w-6 h-6 relative  overflow-hidden" />
+                      </div>
+                    </div>
+                    <div className="self-stretch text-black text-base font-normal font-['Inter'] leading-normal">
+                      Introduction to Wireframing and its Principles. Learn from
+                      the best in the industry.
+                    </div>
+                  </div>
+                  <div className="self-stretch justify-start items-start gap-2 inline-flex">
+                    <div className="mix-blend-lighten justify-start items-start flex">
+                      <div className="px-2.5 py-0.5 bg-[#f9f5ff] rounded-2xl justify-center items-center flex">
+                        <div className="text-center text-[#6840c6] text-sm font-medium font-['Inter'] leading-tight">
+                          Design
+                        </div>
+                      </div>
+                    </div>
+                    <div className="mix-blend-lighten justify-start items-start flex">
+                      <div className="px-2.5 py-0.5 bg-[#eef3ff] rounded-2xl justify-center items-center flex">
+                        <div className="text-center text-[#3537cc] text-sm font-medium font-['Inter'] leading-tight">
+                          Research
+                        </div>
+                      </div>
+                    </div>
+                    <div className="mix-blend-lighten justify-start items-start flex">
+                      <div className="px-2.5 py-0.5 bg-[#fdf1f9] rounded-2xl justify-center items-center flex">
+                        <div className="text-center text-[#c01573] text-sm font-medium font-['Inter'] leading-tight">
+                          Presentation
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="self-stretch justify-center items-start gap-8 inline-flex">
+              <div className="grow shrink basis-0 flex-col justify-start items-start gap-8 inline-flex">
+                <img
+                  className="h-60 relative"
+                  src="https://via.placeholder.com/492x240"
+                />
+                <div className="self-stretch h-[204px] flex-col justify-start items-start gap-6 flex">
+                  <div className="self-stretch h-[156px] flex-col justify-start items-start gap-3 flex">
+                    <div className="self-stretch text-[#6840c6] text-sm font-semibold font-['Inter'] leading-tight">
+                      Sunday , 1 Jan 2023
+                    </div>
+                    <div className="self-stretch justify-start items-start gap-4 inline-flex">
+                      <div className="grow shrink basis-0 text-black text-2xl font-semibold font-['Inter'] leading-loose">
+                        How collaboration makes us better designers
+                      </div>
+                      <div className="pt-1 flex-col justify-start items-start inline-flex">
+                        <div className="w-6 h-6 relative  overflow-hidden" />
+                      </div>
+                    </div>
+                    <div className="self-stretch text-black text-base font-normal font-['Inter'] leading-normal">
+                      Collaboration can make our teams stronger, and our
+                      individual designs better.
+                    </div>
+                  </div>
+                  <div className="self-stretch justify-start items-start gap-2 inline-flex">
+                    <div className="mix-blend-lighten justify-start items-start flex">
+                      <div className="px-2.5 py-0.5 bg-[#f9f5ff] rounded-2xl justify-center items-center flex">
+                        <div className="text-center text-[#6840c6] text-sm font-medium font-['Inter'] leading-tight">
+                          Design
+                        </div>
+                      </div>
+                    </div>
+                    <div className="mix-blend-lighten justify-start items-start flex">
+                      <div className="px-2.5 py-0.5 bg-[#eef3ff] rounded-2xl justify-center items-center flex">
+                        <div className="text-center text-[#3537cc] text-sm font-medium font-['Inter'] leading-tight">
+                          Research
+                        </div>
+                      </div>
+                    </div>
+                    <div className="mix-blend-lighten justify-start items-start flex">
+                      <div className="px-2.5 py-0.5 bg-[#fdf1f9] rounded-2xl justify-center items-center flex">
+                        <div className="text-center text-[#c01573] text-sm font-medium font-['Inter'] leading-tight">
+                          Presentation
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="grow shrink basis-0 flex-col justify-start items-start gap-8 inline-flex">
+                <img
+                  className="h-60 relative"
+                  src="https://via.placeholder.com/492x240"
+                />
+                <div className="self-stretch h-[204px] flex-col justify-start items-start gap-6 flex">
+                  <div className="self-stretch h-[156px] flex-col justify-start items-start gap-3 flex">
+                    <div className="self-stretch text-[#6840c6] text-sm font-semibold font-['Inter'] leading-tight">
+                      Sunday , 1 Jan 2023
+                    </div>
+                    <div className="self-stretch justify-start items-start gap-4 inline-flex">
+                      <div className="grow shrink basis-0 text-black text-2xl font-semibold font-['Inter'] leading-loose">
+                        Our top 10 Javascript frameworks to use
+                      </div>
+                      <div className="pt-1 flex-col justify-start items-start inline-flex">
+                        <div className="w-6 h-6 relative  overflow-hidden" />
+                      </div>
+                    </div>
+                    <div className="self-stretch text-black text-base font-normal font-['Inter'] leading-normal">
+                      JavaScript frameworks make development easy with extensive
+                      features and functionalities.
+                    </div>
+                  </div>
+                  <div className="self-stretch justify-start items-start gap-2 inline-flex">
+                    <div className="mix-blend-lighten justify-start items-start flex">
+                      <div className="px-2.5 py-0.5 bg-[#ebfdf2] rounded-2xl justify-center items-center flex">
+                        <div className="text-center text-[#027947] text-sm font-medium font-['Inter'] leading-tight">
+                          Software Development
+                        </div>
+                      </div>
+                    </div>
+                    <div className="mix-blend-lighten justify-start items-start flex">
+                      <div className="px-2.5 py-0.5 bg-[#fdf1f9] rounded-2xl justify-center items-center flex">
+                        <div className="text-center text-[#c01573] text-sm font-medium font-['Inter'] leading-tight">
+                          Tools
+                        </div>
+                      </div>
+                    </div>
+                    <div className="mix-blend-lighten justify-start items-start flex">
+                      <div className="px-2.5 py-0.5 bg-[#fef1f2] rounded-2xl justify-center items-center flex">
+                        <div className="text-center text-[#c00f47] text-sm font-medium font-['Inter'] leading-tight">
+                          SaaS
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="grow shrink basis-0 flex-col justify-start items-start gap-8 inline-flex">
+                <img
+                  className="h-60 relative"
+                  src="https://via.placeholder.com/492x240"
+                />
+                <div className="self-stretch h-[204px] flex-col justify-start items-start gap-6 flex">
+                  <div className="self-stretch h-[156px] flex-col justify-start items-start gap-3 flex">
+                    <div className="self-stretch text-[#6840c6] text-sm font-semibold font-['Inter'] leading-tight">
+                      Sunday , 1 Jan 2023
+                    </div>
+                    <div className="self-stretch justify-start items-start gap-4 inline-flex">
+                      <div className="grow shrink basis-0 text-black text-2xl font-semibold font-['Inter'] leading-loose">
+                        Podcast: Creating a better CX Community
+                      </div>
+                      <div className="pt-1 flex-col justify-start items-start inline-flex">
+                        <div className="w-6 h-6 relative  overflow-hidden" />
+                      </div>
+                    </div>
+                    <div className="self-stretch text-black text-base font-normal font-['Inter'] leading-normal">
+                      Starting a community doesn’t need to be complicated, but
+                      how do you get started?
+                    </div>
+                  </div>
+                  <div className="self-stretch justify-start items-start gap-2 inline-flex">
+                    <div className="mix-blend-lighten justify-start items-start flex">
+                      <div className="px-2.5 py-0.5 bg-[#f9f5ff] rounded-2xl justify-center items-center flex">
+                        <div className="text-center text-[#6840c6] text-sm font-medium font-['Inter'] leading-tight">
+                          Podcasts
+                        </div>
+                      </div>
+                    </div>
+                    <div className="mix-blend-lighten justify-start items-start flex">
+                      <div className="px-2.5 py-0.5 bg-[#f8f8fb] rounded-2xl justify-center items-center flex">
+                        <div className="text-center text-[#353e72] text-sm font-medium font-['Inter'] leading-tight">
+                          Customer Success
+                        </div>
+                      </div>
+                    </div>
+                    <div className="mix-blend-lighten justify-start items-start flex">
+                      <div className="px-2.5 py-0.5 bg-[#fdf1f9] rounded-2xl justify-center items-center flex">
+                        <div className="text-center text-[#c01573] text-sm font-medium font-['Inter'] leading-tight">
+                          Presentation
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="self-stretch h-[61px] pt-5 border-t border-white/30 justify-between items-center inline-flex">
+            <div className="justify-start items-start flex">
+              <div className="justify-center items-center gap-2 flex">
+                <div className="w-5 h-5 relative  overflow-hidden" />
+                <div className="text-black text-sm font-medium font-['Inter'] leading-tight">
+                  Previous
+                </div>
+              </div>
+            </div>
+            <div className="justify-start items-start gap-0.5 flex">
+              <div className="w-10 h-10 relative bg-[#a189c4] rounded-lg  overflow-hidden">
+                <div className="w-10 h-10 p-3 left-0 top-0 absolute rounded-lg justify-center items-center inline-flex">
+                  <div className="text-center text-[#112211] text-sm font-medium font-['Inter'] leading-tight">
+                    1
+                  </div>
+                </div>
+              </div>
+              <div className="w-10 h-10 relative rounded-lg  overflow-hidden">
+                <div className="w-10 h-10 p-3 left-0 top-0 absolute rounded-lg justify-center items-center inline-flex">
+                  <div className="text-center text-black text-sm font-medium font-['Inter'] leading-tight">
+                    2
+                  </div>
+                </div>
+              </div>
+              <div className="w-10 h-10 relative rounded-lg  overflow-hidden">
+                <div className="w-10 h-10 p-3 left-0 top-0 absolute rounded-lg justify-center items-center inline-flex">
+                  <div className="text-center text-black text-sm font-medium font-['Inter'] leading-tight">
+                    3
+                  </div>
+                </div>
+              </div>
+              <div className="w-10 h-10 relative rounded-lg  overflow-hidden">
+                <div className="w-10 h-10 p-3 left-0 top-0 absolute rounded-lg justify-center items-center inline-flex">
+                  <div className="text-center text-black text-sm font-medium font-['Inter'] leading-tight">
+                    ...
+                  </div>
+                </div>
+              </div>
+              <div className="w-10 h-10 relative rounded-lg  overflow-hidden">
+                <div className="w-10 h-10 p-3 left-0 top-0 absolute rounded-lg justify-center items-center inline-flex">
+                  <div className="text-center text-black text-sm font-medium font-['Inter'] leading-tight">
+                    8
+                  </div>
+                </div>
+              </div>
+              <div className="w-10 h-10 relative rounded-lg  overflow-hidden">
+                <div className="w-10 h-10 p-3 left-0 top-0 absolute rounded-lg justify-center items-center inline-flex">
+                  <div className="text-center text-black text-sm font-medium font-['Inter'] leading-tight">
+                    9
+                  </div>
+                </div>
+              </div>
+              <div className="w-10 h-10 relative rounded-lg  overflow-hidden">
+                <div className="w-10 h-10 p-3 left-0 top-0 absolute rounded-lg justify-center items-center inline-flex">
+                  <div className="text-center text-black text-sm font-medium font-['Inter'] leading-tight">
+                    10
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="justify-start items-start flex">
+              <div className="justify-center items-center gap-2 flex">
+                <div className="text-[#efefef] text-sm font-medium font-['Inter'] leading-tight">
+                  Next
+                </div>
+                <div className="w-5 h-5 relative  overflow-hidden" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="w-[1903px] h-[900px] left-[3px] top-0 absolute">
+          <div className="w-[1434px] h-[900px] left-0 top-0 absolute">
+            <div className="w-[1903px] h-[900px] left-[-3px] top-0 absolute bg-[#eff0f3]" />
+            <div className="w-[1854px] h-[839px] left-[49px] top-[46px] absolute  overflow-hidden">
+              <div className="w-[1440px] h-[53px] left-0 top-0 absolute  overflow-hidden">
+                <div className="w-[3px] h-[3px] left-0 top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[53px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[106px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[159px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[212px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[265px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[318px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[371px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[424px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[477px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[530px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[583px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[636px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[689px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[742px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[795px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[848px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[901px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[954px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[1007px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[1060px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[1113px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[1166px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[1219px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[1272px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[1325px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[1378px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[1431px] top-0 absolute bg-[#d2d6db] rounded-full" />
+              </div>
+              <div className="w-[1440px] h-[53px] left-0 top-[53px] absolute  overflow-hidden">
+                <div className="w-[3px] h-[3px] left-0 top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[53px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[106px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[159px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[212px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[265px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[318px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[371px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[424px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[477px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[530px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[583px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[636px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[689px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[742px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[795px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[848px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[901px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[954px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[1007px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[1060px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[1113px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[1166px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[1219px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[1272px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[1325px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[1378px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[1431px] top-0 absolute bg-[#d2d6db] rounded-full" />
+              </div>
+              <div className="w-[1440px] h-[53px] left-0 top-[106px] absolute  overflow-hidden">
+                <div className="w-[3px] h-[3px] left-0 top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[53px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[106px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[159px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[212px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[265px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[318px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[371px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[424px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[477px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[530px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[583px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[636px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[689px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[742px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[795px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[848px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[901px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[954px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[1007px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[1060px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[1113px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[1166px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[1219px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[1272px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[1325px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[1378px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[1431px] top-0 absolute bg-[#d2d6db] rounded-full" />
+              </div>
+              <div className="w-[1440px] h-[53px] left-0 top-[159px] absolute  overflow-hidden">
+                <div className="w-[3px] h-[3px] left-0 top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[53px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[106px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[159px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[212px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[265px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[318px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[371px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[424px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[477px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[530px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[583px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[636px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[689px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[742px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[795px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[848px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[901px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[954px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[1007px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[1060px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[1113px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[1166px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[1219px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[1272px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[1325px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[1378px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[1431px] top-0 absolute bg-[#d2d6db] rounded-full" />
+              </div>
+              <div className="w-[1440px] h-[53px] left-0 top-[212px] absolute  overflow-hidden">
+                <div className="w-[3px] h-[3px] left-0 top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[53px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[106px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[159px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[212px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[265px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[318px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[371px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[424px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[477px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[530px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[583px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[636px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[689px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[742px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[795px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[848px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[901px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[954px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[1007px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[1060px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[1113px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[1166px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[1219px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[1272px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[1325px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[1378px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[1431px] top-0 absolute bg-[#d2d6db] rounded-full" />
+              </div>
+              <div className="w-[1440px] h-[53px] left-0 top-[265px] absolute  overflow-hidden">
+                <div className="w-[3px] h-[3px] left-0 top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[53px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[106px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[159px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[212px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[265px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[318px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[371px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[424px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[477px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[530px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[583px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[636px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[689px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[742px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[795px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[848px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[901px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[954px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[1007px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[1060px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[1113px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[1166px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[1219px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[1272px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[1325px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[1378px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[1431px] top-0 absolute bg-[#d2d6db] rounded-full" />
+              </div>
+              <div className="w-[1440px] h-[53px] left-0 top-[318px] absolute  overflow-hidden">
+                <div className="w-[3px] h-[3px] left-0 top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[53px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[106px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[159px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[212px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[265px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[318px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[371px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[424px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[477px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[530px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[583px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[636px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[689px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[742px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[795px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[848px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[901px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[954px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[1007px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[1060px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[1113px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[1166px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[1219px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[1272px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[1325px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[1378px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[1431px] top-0 absolute bg-[#d2d6db] rounded-full" />
+              </div>
+              <div className="w-[1440px] h-[53px] left-0 top-[371px] absolute  overflow-hidden">
+                <div className="w-[3px] h-[3px] left-0 top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[53px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[106px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[159px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[212px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[265px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[318px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[371px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[424px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[477px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[530px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[583px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[636px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[689px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[742px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[795px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[848px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[901px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[954px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[1007px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[1060px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[1113px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[1166px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[1219px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[1272px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[1325px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[1378px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[1431px] top-0 absolute bg-[#d2d6db] rounded-full" />
+              </div>
+              <div className="w-[1440px] h-[53px] left-0 top-[424px] absolute  overflow-hidden">
+                <div className="w-[3px] h-[3px] left-0 top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[53px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[106px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[159px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[212px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[265px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[318px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[371px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[424px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[477px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[530px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[583px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[636px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[689px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[742px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[795px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[848px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[901px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[954px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[1007px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[1060px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[1113px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[1166px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[1219px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[1272px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[1325px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[1378px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[1431px] top-0 absolute bg-[#d2d6db] rounded-full" />
+              </div>
+              <div className="w-[1440px] h-[53px] left-0 top-[477px] absolute  overflow-hidden">
+                <div className="w-[3px] h-[3px] left-0 top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[53px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[106px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[159px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[212px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[265px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[318px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[371px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[424px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[477px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[530px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[583px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[636px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[689px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[742px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[795px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[848px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[901px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[954px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[1007px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[1060px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[1113px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[1166px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[1219px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[1272px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[1325px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[1378px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[1431px] top-0 absolute bg-[#d2d6db] rounded-full" />
+              </div>
+              <div className="w-[1440px] h-[53px] left-0 top-[530px] absolute  overflow-hidden">
+                <div className="w-[3px] h-[3px] left-0 top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[53px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[106px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[159px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[212px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[265px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[318px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[371px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[424px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[477px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[530px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[583px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[636px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[689px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[742px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[795px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[848px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[901px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[954px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[1007px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[1060px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[1113px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[1166px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[1219px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[1272px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[1325px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[1378px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[1431px] top-0 absolute bg-[#d2d6db] rounded-full" />
+              </div>
+              <div className="w-[1440px] h-[53px] left-0 top-[583px] absolute  overflow-hidden">
+                <div className="w-[3px] h-[3px] left-0 top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[53px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[106px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[159px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[212px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[265px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[318px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[371px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[424px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[477px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[530px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[583px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[636px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[689px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[742px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[795px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[848px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[901px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[954px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[1007px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[1060px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[1113px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[1166px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[1219px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[1272px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[1325px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[1378px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[1431px] top-0 absolute bg-[#d2d6db] rounded-full" />
+              </div>
+              <div className="w-[1440px] h-[53px] left-0 top-[636px] absolute  overflow-hidden">
+                <div className="w-[3px] h-[3px] left-0 top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[53px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[106px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[159px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[212px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[265px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[318px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[371px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[424px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[477px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[530px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[583px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[636px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[689px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[742px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[795px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[848px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[901px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[954px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[1007px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[1060px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[1113px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[1166px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[1219px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[1272px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[1325px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[1378px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[1431px] top-0 absolute bg-[#d2d6db] rounded-full" />
+              </div>
+              <div className="w-[1440px] h-[53px] left-0 top-[689px] absolute  overflow-hidden">
+                <div className="w-[3px] h-[3px] left-0 top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[53px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[106px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[159px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[212px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[265px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[318px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[371px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[424px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[477px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[530px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[583px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[636px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[689px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[742px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[795px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[848px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[901px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[954px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[1007px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[1060px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[1113px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[1166px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[1219px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[1272px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[1325px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[1378px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[1431px] top-0 absolute bg-[#d2d6db] rounded-full" />
+              </div>
+              <div className="w-[1440px] h-[53px] left-0 top-[742px] absolute  overflow-hidden">
+                <div className="w-[3px] h-[3px] left-0 top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[53px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[106px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[159px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[212px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[265px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[318px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[371px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[424px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[477px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[530px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[583px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[636px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[689px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[742px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[795px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[848px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[901px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[954px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[1007px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[1060px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[1113px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[1166px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[1219px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[1272px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[1325px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[1378px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[1431px] top-0 absolute bg-[#d2d6db] rounded-full" />
+              </div>
+              <div className="w-[1440px] h-[53px] left-0 top-[795px] absolute  overflow-hidden">
+                <div className="w-[3px] h-[3px] left-0 top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[53px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[106px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[159px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[212px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[265px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[318px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[371px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[424px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[477px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[530px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[583px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[636px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[689px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[742px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[795px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[848px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[901px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[954px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[1007px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[1060px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[1113px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[1166px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[1219px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[1272px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[1325px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[1378px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[1431px] top-0 absolute bg-[#d2d6db] rounded-full" />
+              </div>
+              <div className="w-[1440px] h-[53px] left-0 top-[848px] absolute  overflow-hidden">
+                <div className="w-[3px] h-[3px] left-0 top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[53px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[106px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[159px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[212px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[265px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[318px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[371px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[424px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[477px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[530px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[583px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[636px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[689px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[742px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[795px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[848px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[901px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[954px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[1007px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[1060px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[1113px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[1166px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[1219px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[1272px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[1325px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[1378px] top-0 absolute bg-[#d2d6db] rounded-full" />
+                <div className="w-[3px] h-[3px] left-[1431px] top-0 absolute bg-[#d2d6db] rounded-full" />
+              </div>
+            </div>
+          </div>
+          <div className="w-6 h-6 left-[940px] top-[846px] absolute  overflow-hidden" />
+          <div className="left-[100px] top-[271px] absolute flex-col justify-start items-start gap-[30px] inline-flex">
+            <div className="w-[824px] text-[#2b2c34] text-[68px] font-bold font-['Plus Jakarta Sans'] capitalize">
+              Hi, i’m Jonon <br />
+              Full Stack dev
+            </div>
+            <div className="justify-center items-center gap-3 inline-flex">
+              <div className="w-14 h-[0px] origin-top-left rotate-90 border-2 border-[#2b2c34]"></div>
+              <div className="w-[812px] text-[#9a9393] text-[28px] font-normal font-['Plus Jakarta Sans']">
+                On this blog I share tips and tricks, frameworks, projects,
+                tutorials, etc
+                <br />
+                Make sure you subscribe to get the latest updates
+              </div>
+            </div>
+            <div className="w-[757px] h-[110px] justify-start items-start gap-5 inline-flex overflow-hidden">
+              <div className="pl-[25px] pr-[200px] py-[21px] bg-[#fffffe] rounded-lg border-2 justify-start items-center gap-2.5 flex">
+                <div className="text-[#c0c0c0] text-xl font-normal font-['Plus Jakarta Sans']">
+                  Enter your email here....
+                </div>
+              </div>
+              <div className="px-[23px] pt-5 pb-[19px] bg-[#6246ea] rounded-lg justify-center items-center gap-2.5 flex">
+                <div className="text-[#fffffe] text-xl font-bold font-['Plus Jakarta Sans'] capitalize">
+                  Subscribe
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="w-[514px] h-[451px] left-[1215px] top-[284px] absolute  overflow-hidden">
+            <div className="w-[474.93px] h-[423.46px] left-[19.30px] top-[15px] absolute">
+              <div className="w-[43.81px] h-[46.74px] left-[59.34px] top-[165.01px] absolute"></div>
+            </div>
+          </div>
+        </div>
+        <div className="w-[1903px] h-[110px] left-0 top-0 absolute bg-white" />
+        <img
+          className="w-[264px] h-28 left-0 top-0 absolute"
+          src="https://via.placeholder.com/264x112"
+        />
+        <div className="w-[328px] h-[49px] left-[1523px] top-[30px] absolute">
+          <div className="w-[110px] h-[49px] left-0 top-0 absolute bg-[#6246ea] rounded-[10px]" />
+          <div className="w-[169px] h-[49px] left-[159px] top-0 absolute bg-[#6246ea] rounded-[10px]" />
+          <div className="left-[19px] top-[8px] absolute text-white text-2xl font-semibold font-['Inter']">
+            Log in{" "}
+          </div>
+          <div className="left-[202px] top-[8px] absolute text-white text-2xl font-semibold font-['Inter']">
+            Sign up
+          </div>
+        </div>
+        <div className="w-[29px] h-[0px] left-[1274px] top-[41px] absolute origin-top-left rotate-90 border border-white"></div>
+        <div className="w-[1903px] h-[593px] left-0 top-[2791px] absolute bg-white  overflow-hidden">
+          <div className="w-[1903px] h-[593px] left-0 top-0 absolute bg-[#09132e]" />
+          <div className="w-[1475.16px] h-[414px] left-[186px] top-[100px] absolute">
+            <div className="w-[182.37px] h-[223px] left-[55.84px] top-[32px] absolute">
+              <div className="w-[77.97px] left-0 top-0 absolute text-white text-base font-bold font-['Gilroy'] leading-7">
+                Product
+              </div>
+              <div className="w-[182.37px] left-0 top-[43px] absolute opacity-75 text-white text-base font-normal font-['Larsseit']">
+                Employee database
+              </div>
+              <div className="w-[62.11px] left-0 top-[75px] absolute opacity-75 text-white text-base font-normal font-['Larsseit']">
+                Payroll
+              </div>
+              <div className="w-[92.51px] left-0 top-[107px] absolute opacity-75 text-white text-base font-normal font-['Larsseit']">
+                Absences
+              </div>
+              <div className="w-[125.55px] left-0 top-[139px] absolute opacity-75 text-white text-base font-normal font-['Larsseit']">
+                Time tracking
+              </div>
+              <div className="w-[116.29px] left-0 top-[171px] absolute opacity-75 text-white text-base font-normal font-['Larsseit']">
+                Shift planner
+              </div>
+              <div className="w-[93.83px] left-0 top-[203px] absolute opacity-75 text-white text-base font-normal font-['Larsseit']">
+                Recruiting
+              </div>
+            </div>
+            <div className="w-[114.97px] h-[127px] left-[429.83px] top-[32px] absolute">
+              <div className="w-[114.97px] left-0 top-0 absolute text-white text-base font-bold font-['Gilroy'] leading-7">
+                Information
+              </div>
+              <div className="w-[39.65px] left-0 top-[43px] absolute opacity-75 text-white text-base font-normal font-['Larsseit']">
+                FAQ
+              </div>
+              <div className="w-[40.97px] left-0 top-[75px] absolute opacity-75 text-white text-base font-normal font-['Larsseit']">
+                Blog
+              </div>
+              <div className="w-[76.65px] left-0 top-[107px] absolute opacity-75 text-white text-base font-normal font-['Larsseit']">
+                Support
+              </div>
+            </div>
+            <div className="w-[101.76px] h-[159px] left-[736.43px] top-[32px] absolute">
+              <div className="w-[96.47px] h-7 left-0 top-0 absolute text-white text-base font-bold font-['Gilroy'] leading-7">
+                Company
+              </div>
+              <div className="w-[84.58px] h-5 left-0 top-[43px] absolute opacity-75 text-white text-base font-normal font-['Larsseit']">
+                About us
+              </div>
+              <div className="w-[74.01px] h-5 left-0 top-[75px] absolute opacity-75 text-white text-base font-normal font-['Larsseit']">
+                Careers
+              </div>
+              <div className="w-[101.76px] h-5 left-0 top-[107px] absolute opacity-75 text-white text-base font-normal font-['Larsseit']">
+                Contact us
+              </div>
+              <div className="w-[93.83px] left-0 top-[139px] absolute opacity-75 text-white text-base font-normal font-['Larsseit']">
+                Lift Media
+              </div>
+            </div>
+            <div className="w-[446.68px] h-[258px] left-[1028.48px] top-0 absolute">
+              <div className="w-[446.68px] h-[258px] left-0 top-0 absolute opacity-10 bg-white" />
+              <div className="w-[97.79px] h-7 left-[55.50px] top-[32px] absolute text-white text-base font-bold font-['Gilroy'] leading-7">
+                Subscribe
+              </div>
+              <div className="w-[327.74px] h-[50px] left-[55.50px] top-[75px] absolute">
+                <div className="w-[327.74px] h-[50px] left-0 top-0 absolute bg-white rounded-md border border-[#e7e8f2]" />
+                <div className="w-[111.01px] h-[18px] left-[21.14px] top-[16px] absolute text-[#7a7e92] text-sm font-normal font-['Larsseit']">
+                  Email address
+                </div>
+              </div>
+              <div className="w-[335.67px] h-[82px] left-[55.50px] top-[145px] absolute opacity-60 text-white text-xs font-normal font-['Larsseit'] leading-tight">
+                Hello, we are Lift Media. Our goal is to translate the positive
+                effects from revolutionizing how companies engage with their
+                clients & their team.
+              </div>
+            </div>
+            <div className="w-[1419.32px] h-px left-[55.84px] top-[312px] absolute opacity-20 bg-white border" />
+            <div className="w-[864.28px] h-[35px] left-[610.88px] top-[350px] absolute">
+              <div className="w-[285.45px] h-[18px] left-0 top-[9px] absolute">
+                <div className="w-[50.22px] h-[18px] left-0 top-0 absolute text-white text-sm font-normal font-['Larsseit']">
+                  Terms
+                </div>
+                <div className="w-[60.79px] h-[18px] left-[103.08px] top-0 absolute text-white text-sm font-normal font-['Larsseit']">
+                  Privacy
+                </div>
+                <div className="w-[68.72px] h-[18px] left-[216.73px] top-0 absolute text-white text-sm font-normal font-['Larsseit']">
+                  Cookies
+                </div>
+              </div>
+              <div className="w-[178.41px] h-[35px] left-[685.87px] top-0 absolute">
+                <div className="w-[46.25px] h-[35px] left-[132.15px] top-0 absolute"></div>
+                <div className="w-[46.25px] h-[35px] left-[66.08px] top-0 absolute"></div>
+                <div className="w-[46.25px] h-[35px] left-0 top-0 absolute">
+                  <div className="w-[15.69px] h-[11.87px] left-[15.86px] top-[11px] absolute"></div>
+                </div>
+              </div>
+            </div>
+            <div className="w-[238px] h-[78px] left-0 top-[336px] absolute bg-white rounded-[10px] border border-black" />
+          </div>
+          <img
+            className="w-[264px] h-28 left-[171px] top-[419px] absolute"
+            src="https://via.placeholder.com/264x112"
+          />
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default Herosection;
