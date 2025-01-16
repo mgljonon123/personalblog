@@ -1,4 +1,33 @@
-import * as React from "react";
+import React from "react";
+
+// export function NavigationTabs({ activeFilter, onFilterChange }) {
+//   return (
+//     <nav
+//       className="flex gap-5 items-start ml-6 max-w-full text-base text-black w-[331px] max-md:ml-2.5"
+//       role="navigation"
+//       aria-label="Content filters"
+//     >
+//       <div className="flex flex-auto gap-5 items-start">
+//         <button
+//           className={`flex flex-col whitespace-nowrap w-[113px] ${
+//             activeFilter === "Daily" ? "border-b border-black" : ""
+//           }`}
+//           onClick={() => onFilterChange("Daily")}
+//         >
+//           <span>Daily</span>
+//         </button>
+//         <button
+//           className={`flex flex-col whitespace-nowrap w-[75px] ${
+//             activeFilter === "My posts" ? "border-b border-black" : ""
+//           }`}
+//           onClick={() => onFilterChange("My posts")}
+//         >
+//           My posts
+//         </button>
+//       </div>
+//     </nav>
+//   );
+// }
 
 export function NavigationTabs() {
   return (
@@ -12,13 +41,12 @@ export function NavigationTabs() {
           className="flex flex-col whitespace-nowrap rounded-none w-[113px]"
           aria-current="page"
         >
-          <span>Programming</span>
+          <span>Daily</span>
           <div className="shrink-0 mt-1.5 h-px border border-black border-solid" />
         </button>
         <button className="whitespace-nowrap rounded-none w-[75px]">
-          Following
+          My posts
         </button>
-        <button className="rounded-none w-[59px]">For You</button>
       </div>
       <button aria-label="Filter options">
         <img

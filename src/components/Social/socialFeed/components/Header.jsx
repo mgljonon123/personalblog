@@ -1,10 +1,8 @@
 import * as React from "react";
-
 import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom";
 import SidebarNavigation from "../../../../SidebarNavigation";
 import Post2 from "../../../post/post2";
-// import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom";
-// import { NavigationMenu } from "../../../navigation/NavigationMenu";
+
 export function Header() {
   return (
     <header
@@ -29,7 +27,7 @@ export function Header() {
           </div>
         </div>
         <div className="flex gap-10 justify-center items-center self-stretch my-auto text-xl min-w-[240px]">
-          <Link to={"/Post1"} element={<Post2></Post2>}>
+          <Link to={"/Post2"} element={<Post2></Post2>}>
             <button
               className="flex gap-4 justify-center items-center self-stretch my-auto"
               aria-label="Create new post"
@@ -52,11 +50,6 @@ export function Header() {
               />
             </button>
           </Link>
-          {/* <img
-            src=""
-            className="flex shrink-0 self-stretch my-auto bg-red-400 rounded-full h-[42px] w-[42px]"
-            aria-label="User profile"
-          /> */}
           <div>
             <SidebarNavigation />
           </div>

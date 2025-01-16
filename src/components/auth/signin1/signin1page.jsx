@@ -9,20 +9,20 @@ import img1 from "./img1.png";
 import icon from "./icon.png";
 export default function Signin1page() {
   return (
-    <main className="flex flex-col bg-white" role="main">
-      <div className="flex relative flex-col justify-center items-center px-20 py-28 w-full min-h-[1260px] max-md:px-5 max-md:py-24 max-md:max-w-full">
+    <main className="flex flex-col " role="main">
+      <div className="flex relative flex-col justify-center items-center px-20 py-20 w-full max-md:px-5 max-md:py-24 max-md:max-w-full">
         <img
           loading="lazy"
           src="https://cdn.builder.io/api/v1/image/assets/TEMP/8909c0efc620c890ff94ae179f6b417d5a7840860b8015d79c359407588f25f8?placeholderIfAbsent=true&apiKey=8947fdbc91b3418387184c18824db628"
           alt=""
-          className="object-cover absolute inset-0 size-full"
+          className="object-cover absolute h-[990px]"
         />
-        <section className="flex overflow-hidden relative flex-col pt-3.5 pr-4 pl-20 mb-0 max-w-full bg-white rounded-3xl w-[1165px] max-md:pl-5 max-md:mb-2.5">
+        <section className="flex overflow-hidden relative flex-col pr-4 pl-20 mb-0 bg-white rounded-3xl w-[1165px] max-md:pl-5 max-md:mb-2.5">
           <div className="flex flex-wrap gap-10 self-end max-w-full w-[796px]">
             <div className="flex-auto max-md:max-w-full">
               <div className="flex gap-5 max-md:flex-col">
-                <div className="flex flex-col w-[69%] max-md:ml-0 max-md:w-full">
-                  <h1 className="mt-28 mr-0 text-2xl font-medium text-center text-stone-500 max-md:mt-10 max-md:max-w-full">
+                <div className="flex flex-col w-[69%]">
+                  <h1 className="mt-28 mr-0 text-2xl font-medium text-center text-stone-500 mr-[100px]">
                     Unlimited free access to our resources
                   </h1>
                 </div>
@@ -31,17 +31,11 @@ export default function Signin1page() {
                     loading="lazy"
                     src={img1}
                     alt=""
-                    className="object-contain grow shrink-0 w-52 max-w-full aspect-[1.46]"
+                    className="object-cover grow shrink-0  max-w-full aspect-[1.46]"
                   />
                 </div>
               </div>
             </div>
-            <img
-              loading="lazy"
-              src="https://cdn.builder.io/api/v1/image/assets/TEMP/bc567b3a4793952261a31635774a1dbddeac97a25f19f69e4e6ae596fd371a3a?placeholderIfAbsent=true&apiKey=8947fdbc91b3418387184c18824db628"
-              alt=""
-              className="object-contain shrink-0 self-start w-6 aspect-square"
-            />
           </div>
 
           <div className="flex flex-col items-start mt-5 min-h-[633px] max-md:mr-1.5 max-md:max-w-full">
@@ -111,7 +105,7 @@ export default function Signin1page() {
                         </label>
                         <button
                           type="button"
-                          className="flex flex-1 gap-2 text-lg text-right text-stone-500 text-opacity-80"
+                          className="flex flex-1 gap-2 text-lg text-right text-stone-500 text-opacity-80 ml-[170px]"
                           aria-label="Toggle password visibility"
                         >
                           <img

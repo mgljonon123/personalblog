@@ -1,4 +1,3 @@
-// App.js
 import "./App.css";
 
 import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom";
@@ -20,6 +19,7 @@ import Post1 from "./components/post/post1";
 import Profile from "./components/editprofile/mainprofile/profile";
 import SettingsPage from "./components/pass/settings/SettingsPage";
 import LibraryLayout from "./components/Library1/library/LibraryLayout";
+import { Library } from "./components/library2/Library";
 function App() {
   return (
     <Routes>
@@ -37,6 +37,7 @@ function App() {
       <Route path="/PrivacySettings" element={<PrivacySettings />} />
       <Route path="/Profile" element={<Profile />} />
       <Route path="/SettingsPage" element={<SettingsPage />} />
+      <Route path="/Library2" element={<Library />} />
 
       <Route
         path="/Notification"

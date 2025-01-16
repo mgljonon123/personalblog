@@ -2,6 +2,8 @@ import * as React from "react";
 import { ArticleCard } from "./ArticleCard";
 import { Header } from "./Header";
 import { UserProfile } from "./UserProfile";
+import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom";
+import { Library } from "../../library2/Library";
 
 const articles = [
   {
@@ -72,9 +74,11 @@ export default function LibraryLayout() {
                     <button className="self-stretch my-auto ml-[50px] text-black">
                       Saved List
                     </button>
-                    <button className="self-stretch my-auto text-black text-opacity-50">
-                      Reading History
-                    </button>
+                    <Link to={"/library2"} element={<Library></Library>}>
+                      <button className="self-stretch my-auto text-black text-opacity-50">
+                        Reading History
+                      </button>
+                    </Link>
                   </nav>
                   <div className="shrink-0 mt-3.5 max-w-full h-0.5 border-2 border-black border-solid w-[110px] left-[50px] relative" />
                 </div>

@@ -92,17 +92,16 @@ function Post1() {
         </div>
 
         {/* Publish button */}
-        <div
-          className="w-[227px] h-[62px] p-3 left-[1085px] top-[242px] absolute bg-[#3a8e33] rounded-lg border border-white justify-center items-center gap-2 inline-flex overflow-hidden"
-          onClick={handlePublish}
-        >
-          <Link to={"/Post2"} element={<Post2 />}>
+        <Link to={"/Post2"} element={<Post2 />}>
+          <div
+            className="w-[227px] h-[62px] p-3 left-[1085px] top-[242px] absolute bg-[#3a8e33] rounded-lg border border-white justify-center items-center gap-2 inline-flex overflow-hidden"
+            onClick={handlePublish}
+          >
             <button className="text-neutral-100 text-[25px] font-normal font-['Inter'] leading-none">
               Publish
             </button>
-          </Link>
-        </div>
-
+          </div>
+        </Link>
         {/* Publish status */}
         <div className="w-[261.55px] h-[53.38px] left-[356px] top-[418.62px] absolute">
           <div

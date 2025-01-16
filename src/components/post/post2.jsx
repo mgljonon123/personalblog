@@ -103,16 +103,18 @@ function Post2() {
         <div>
           <div className="w-60 h-[0px] left-[717px] top-[336px] absolute origin-top-left rotate-90 border border-black"></div>
           <div className="w-60 h-[0px] left-[1208px] top-[336px] absolute origin-top-left rotate-90 border border-black"></div>
-          <div className="w-[341px] h-[165px] left-[781px] top-[336px] absolute bg-[#d9d9d9]" />
           <div className="w-[188px] h-[30px] left-[882px] top-[403px] absolute text-black text-2xl font-normal font-['Inter'] leading-normal">
-            <label htmlFor="image-upload" className="cursor-pointer">
+            <label
+              htmlFor="image-upload"
+              className="w-[341px] h-[165px] bg-[#d9d9d9] cursor-pointer"
+            >
               Add Image +
             </label>
             <input
               id="image-upload"
               type="file"
               accept="image/*"
-              className="hidden"
+              className="hidden w-[341px] h-[165px] bg-[#d9d9d9]"
               onChange={handleImageChange}
             />
           </div>
