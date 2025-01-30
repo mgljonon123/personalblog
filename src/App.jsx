@@ -1,5 +1,4 @@
 import "./App.css";
-
 import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom";
 import Signin1page from "./components/auth/signin1/signin1page";
 import BlogPage from "./components/components/blog/BlogPage";
@@ -15,11 +14,14 @@ import Friends4 from "./components/friends/friends4";
 import PrivacySettings from "./components/editprofile/privacy/PrivacySettings";
 import Notification from "./components/notification/notification";
 import Post2 from "./components/post/post2";
-import Post1 from "./components/post/post1";
 import Profile from "./components/editprofile/mainprofile/profile";
 import SettingsPage from "./components/pass/settings/SettingsPage";
 import LibraryLayout from "./components/Library1/library/LibraryLayout";
 import { Library } from "./components/library2/Library";
+import SearchPage from "./components/search/SearchPage";
+import { PostCarddefault } from "./components/Social/socialFeed/posts/PostCarddefault";
+import { BlogPost } from "./components/blog/components/BlogPost";
+
 function App() {
   return (
     <Routes>
@@ -38,13 +40,13 @@ function App() {
       <Route path="/Profile" element={<Profile />} />
       <Route path="/SettingsPage" element={<SettingsPage />} />
       <Route path="/Library2" element={<Library />} />
+      <Route path="/SearchPage" element={<SearchPage></SearchPage>} />
+      <Route path="/BlogPost" element={<BlogPost></BlogPost>} />
 
       <Route
         path="/Notification"
         element={<Notification></Notification>}
       ></Route>
-
-      <Route path="/Post1" element={<Post1></Post1>}></Route>
       <Route path="/Post2" element={<Post2></Post2>}></Route>
       <Route path="/Library" element={<LibraryLayout></LibraryLayout>}></Route>
 

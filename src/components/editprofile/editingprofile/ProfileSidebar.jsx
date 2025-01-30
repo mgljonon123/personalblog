@@ -1,6 +1,7 @@
 import * as React from "react";
 import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom";
 import PrivacySettings from "../privacy/PrivacySettings";
+import SettingsPage from "../../pass/settings/SettingsPage";
 export function ProfileSidebar() {
   const menuItems = [
     { label: "Privacy", active: false },
@@ -21,12 +22,26 @@ export function ProfileSidebar() {
       <button className="overflow-hidden p-3 mt-12 max-w-full bg-emerald-50 rounded-lg text-sky-950 w-[185px] max-md:pr-5 max-md:mt-10 max-md:mr-2">
         Edit Profile
       </button>
+      <Link
+        to={"/PrivacySettings"}
+        element={<PrivacySettings></PrivacySettings>}
+      >
+        {" "}
+        <button className="overflow-hidden p-3 mt-12 max-w-full  rounded-lg text-sky-950 w-[185px] max-md:pr-5 max-md:mt-10 max-md:mr-2">
+          Privacy
+        </button>
+      </Link>
+      <Link to={"/SettingsPage"} element={<SettingsPage></SettingsPage>}>
+        <button className="overflow-hidden p-3 mt-12 max-w-full  rounded-lg text-sky-950 w-[185px] max-md:pr-5 max-md:mt-10 max-md:mr-2">
+          Password Change
+        </button>
+      </Link>
       <nav
-        className="flex flex-col pr-7 pl-3 mt-9 text-zinc-400 max-md:pr-5"
+        className="flex flex-col pr-7 pl-3 mt-9 bg-black text-zinc-400 max-md:pr-5"
         role="navigation"
         aria-label="Profile menu"
       >
-        {menuItems.map((item, index) => (
+        {/* {menuItems.map((item, index) => (
           <Link
             to={"/PrivacySettings"}
             element={<PrivacySettings></PrivacySettings>}
@@ -41,7 +56,7 @@ export function ProfileSidebar() {
               {item.label}
             </button>
           </Link>
-        ))}
+        ))} */}
       </nav>
     </aside>
   );

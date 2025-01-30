@@ -1,7 +1,8 @@
 import * as React from "react";
 import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom";
 import SocialFeed from "../../Social/socialFeed/SocialFeed";
-import Post1 from "../../post/post1";
+import Post2 from "../../post/post2";
+import SidebarNavigation from "../../../SidebarNavigation";
 export function Header() {
   return (
     <header
@@ -30,7 +31,7 @@ export function Header() {
           </div>
         </div>
         <div className="flex gap-10 justify-center items-center self-stretch my-auto text-xl min-w-[240px]">
-          <Link to={"/Post1"} element={<Post1></Post1>}>
+          <Link to={"/Post2"} element={<Post2></Post2>}>
             <button
               className="flex gap-4 justify-center items-center self-stretch my-auto"
               aria-label="Make Post"
@@ -51,11 +52,9 @@ export function Header() {
             alt=""
             className="object-contain shrink-0 self-stretch my-auto w-6 aspect-square"
           />
-          <div
-            className="flex shrink-0 self-stretch my-auto bg-red-400 rounded-full h-[42px] w-[42px]"
-            role="img"
-            aria-label="User avatar"
-          />
+          <div>
+            <SidebarNavigation></SidebarNavigation>
+          </div>
         </div>
       </nav>
     </header>

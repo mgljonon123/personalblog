@@ -1,23 +1,30 @@
-import * as React from "react";
+import React, { useState } from "react";
 import LanguageSelector from "./LanguageSelector";
 import FooterLinks from "./FooterLinks";
 import SocialButton from "./SocialButton";
-import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom";
+import { BrowserRouter as Router, Link } from "react-router-dom";
 import InterestsPage from "../../tagnuud/interests/InterestsPage";
 import CreateAccount from "../createaccount/CreateAccount";
 import img1 from "./img1.png";
 import icon from "./icon.png";
+
 export default function Signin1page() {
+  const [passwordVisible, setPasswordVisible] = useState(false);
+
+  const togglePasswordVisibility = () => {
+    setPasswordVisible(!passwordVisible);
+  };
+
   return (
-    <main className="flex flex-col " role="main">
-      <div className="flex relative flex-col justify-center items-center px-20 py-20 w-full max-md:px-5 max-md:py-24 max-md:max-w-full">
+    <main className="flex flex-col overflow-hidden h-[100vh]" role="main">
+      <div className="flex relative flex-col justify-center items-center w-full max-md:px-5 max-md:py-24 max-md:max-w-full">
         <img
           loading="lazy"
           src="https://cdn.builder.io/api/v1/image/assets/TEMP/8909c0efc620c890ff94ae179f6b417d5a7840860b8015d79c359407588f25f8?placeholderIfAbsent=true&apiKey=8947fdbc91b3418387184c18824db628"
           alt=""
-          className="object-cover absolute h-[990px]"
+          className="object-cover absolute h-[990px] w-[1920px]"
         />
-        <section className="flex overflow-hidden relative flex-col pr-4 pl-20 mb-0 bg-white rounded-3xl w-[1165px] max-md:pl-5 max-md:mb-2.5">
+        <section className="flex overflow-hidden relative flex-col pr-4 pl-20 mt-[50px] bg-white rounded-3xl w-[1165px] max-md:pl-5 max-md:mb-2.5">
           <div className="flex flex-wrap gap-10 self-end max-w-full w-[796px]">
             <div className="flex-auto max-md:max-w-full">
               <div className="flex gap-5 max-md:flex-col">
@@ -105,6 +112,7 @@ export default function Signin1page() {
                         </label>
                         <button
                           type="button"
+                          onClick={togglePasswordVisibility}
                           className="flex flex-1 gap-2 text-lg text-right text-stone-500 text-opacity-80 ml-[170px]"
                           aria-label="Toggle password visibility"
                         >
@@ -114,11 +122,11 @@ export default function Signin1page() {
                             alt=""
                             className="object-contain shrink-0 self-start w-6 aspect-square"
                           />
-                          <span>Hide</span>
+                          <span>{passwordVisible ? "Hide" : "Show"}</span>
                         </button>
                       </div>
                       <input
-                        type="password"
+                        type={passwordVisible ? "text" : "password"}
                         id="password"
                         className="flex mt-1 w-full rounded-xl border-solid border-[3px] border-stone-500 border-opacity-30 min-h-[56px]"
                         aria-label="Password"
@@ -145,7 +153,7 @@ export default function Signin1page() {
                   {/* Create Account Button */}
                   <Link
                     to={"/CreateAccount"}
-                    element={<CreateAccount></CreateAccount>}
+                    element={<CreateAccount />}
                     className="mt-4 text-center text-xl text-blue-600"
                   >
                     Create an Account

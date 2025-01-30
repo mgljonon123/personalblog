@@ -1,9 +1,18 @@
-import * as React from "react";
+import React, { useState } from "react";
 import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom";
 import SidebarNavigation from "../../../../SidebarNavigation";
 import Post2 from "../../../post/post2";
+import SocialFeed from "../SocialFeed";
+import SearchPage from "../../../search/SearchPage";
 
 export function Header() {
+  const [searchText, setSearchText] = useState("");
+  const handleChange = (e) => {
+    setSearchText(e.target.value); // Update state on input change
+  };
+  function ref() {
+    localStorage.setItem("input_data", searchText);
+  }
   return (
     <header
       className="flex flex-col justify-center items-center px-16 py-2 w-full text-black bg-zinc-300 max-md:px-5 max-md:max-w-full"
@@ -14,16 +23,26 @@ export function Header() {
         role="navigation"
       >
         <div className="flex gap-9 items-center self-stretch my-auto whitespace-nowrap min-w-[240px]">
-          <h1 className="self-stretch my-auto text-4xl font-bold">Home</h1>
+          <Link to={"/SocialFeed"} element={<SocialFeed></SocialFeed>}>
+            <h1 className="self-stretch my-auto text-4xl font-bold">Home</h1>
+          </Link>
           <div className="flex gap-3.5 items-center self-stretch my-auto text-xl">
-            <img
-              src="https://cdn.builder.io/api/v1/image/assets/TEMP/a4535910d6d22857438a99ff176426647fc880ba54be5653465e86ecaa4360b1?placeholderIfAbsent=true&apiKey=8947fdbc91b3418387184c18824db628"
-              alt="Search icon"
-              className="object-contain shrink-0 self-stretch my-auto w-6 aspect-square"
+            <Link to={"/SearchPage"} element={<SearchPage></SearchPage>}>
+              <button onClick={ref()}>
+                <img
+                  src="https://cdn.builder.io/api/v1/image/assets/TEMP/a4535910d6d22857438a99ff176426647fc880ba54be5653465e86ecaa4360b1?placeholderIfAbsent=true&apiKey=8947fdbc91b3418387184c18824db628"
+                  alt="Search icon"
+                  className="object-contain shrink-0 self-stretch my-auto w-6 aspect-square"
+                />
+              </button>
+            </Link>
+            <input
+              type="text"
+              value={searchText} // Bind the value to the state
+              onChange={handleChange} // Update state on change
+              placeholder="Search"
+              className="p-[7px]"
             />
-            <button className="self-stretch my-auto" aria-label="Search">
-              Search
-            </button>
           </div>
         </div>
         <div className="flex gap-10 justify-center items-center self-stretch my-auto text-xl min-w-[240px]">

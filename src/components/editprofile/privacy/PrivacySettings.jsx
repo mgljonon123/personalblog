@@ -9,22 +9,22 @@ const privacyCards = [
   {
     title: "How can people find you on Facebook?",
     imageUrl:
-      "https://cdn.builder.io/api/v1/image/assets%2FYJIGb4i01jvw0SRdL5Bt%2F72c80f114dc149019051b6852a9e3b7a",
+      "https://img.lovepik.com/background/20211021/large/lovepik-internet-high-tech-wallpaper-background-image_500564521.jpg",
   },
   {
     title: "Who can see the things you've shared?",
     imageUrl:
-      "https://cdn.builder.io/api/v1/image/assets%2FYJIGb4i01jvw0SRdL5Bt%2F72c80f114dc149019051b6852a9e3b7a",
+      "https://img.lovepik.com/background/20211021/large/lovepik-internet-high-tech-wallpaper-background-image_500564521.jpg",
   },
   {
     title: "How to keep your account secure?",
     imageUrl:
-      "https://cdn.builder.io/api/v1/image/assets%2FYJIGb4i01jvw0SRdL5Bt%2F72c80f114dc149019051b6852a9e3b7a",
+      "https://img.lovepik.com/background/20211021/large/lovepik-internet-high-tech-wallpaper-background-image_500564521.jpg",
   },
   {
-    title: "Your data settings on Facebook",
+    title: "Your data settings",
     imageUrl:
-      "https://cdn.builder.io/api/v1/image/assets%2FYJIGb4i01jvw0SRdL5Bt%2F72c80f114dc149019051b6852a9e3b7a",
+      "https://img.lovepik.com/background/20211021/large/lovepik-internet-high-tech-wallpaper-background-image_500564521.jpg",
   },
 ];
 
@@ -38,7 +38,7 @@ export default function PrivacySettings() {
         alt="Privacy banner"
         className="object-contain -mt-1.5 w-full aspect-[10.2] max-md:max-w-full"
       />
-      <section className="flex z-10 flex-col items-start px-16 mt-0 w-full max-md:px-5 max-md:max-w-full">
+      <section className="flex z-10 flex-col items-start px-16 absolute top-[180px] w-full max-md:px-5 max-md:max-w-full">
         <div className="flex flex-wrap gap-10 self-stretch w-full font-bold text-sky-950 max-md:max-w-full">
           <img
             loading="lazy"
@@ -108,10 +108,6 @@ export default function PrivacySettings() {
             </div>
           </div>
         </div>
-        <p className="mt-6 ml-72 text-base font-bold leading-none text-zinc-400 max-md:max-w-full">
-          You can <span className="text-sky-950">check other privacy</span>{" "}
-          settings in Broken alcoholics Settings.
-        </p>
       </section>
     </main>
   );

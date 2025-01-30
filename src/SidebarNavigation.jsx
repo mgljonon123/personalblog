@@ -1,43 +1,62 @@
-import React from "react";
+import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom";
-import ProfilePage from "./pages/ProfilePage";
-import img1 from "./img1.png";
+
 export default function SidebarNavigation() {
   const navigate = useNavigate();
+  const [dropdownOpen, setDropdownOpen] = useState(false);
 
-  // Handle the navigation when an option is selected
-  const handleNavigation = (e) => {
-    const selectedValue = e.target.value;
-    if (selectedValue) {
-      navigate(selectedValue);
-    }
+  const handleNavigation = (path) => {
+    setDropdownOpen(false);
+    navigate(path);
   };
 
   return (
-    <div className="w-[120px] bg-[#0D1117] p-2.5 rounded-md">
-      <select
-        onChange={handleNavigation}
-        className="w-full p-2.5 bg-transparent border-none text-white cursor-pointer rounded-md hover:bg-[#21262C] focus:outline-none focus:bg-[#1A1F24] active:bg-[#1A1F24]"
+    <div className="w-[50px] h-[50px] bg-[#21262C] rounded-md relative">
+      <button
+        onClick={() => setDropdownOpen(!dropdownOpen)}
+        className="w-full  bg-transparent border-none cursor-pointer rounded-md"
       >
-        <option value="">Menu</option>
+        <img
+          src="https://static.vecteezy.com/system/resources/thumbnails/001/840/612/small/picture-profile-icon-male-icon-human-or-people-sign-and-symbol-free-vector.jpg"
+          alt=""
+          className="w-[50px] h-[50px]"
+        />
+      </button>
 
-        <option value="/Profile">My Profile</option>
-
-        <option value="/ProfilePage">Edit Profile</option>
-
-        <option value="/friends1">Friends</option>
-
-        <option value="/Library">Library</option>
-
-        <option value="/PrivacySettings">Privacy</option>
-
-        <option value="/">Pass/Change</option>
-
-        <option value="/">Sign out</option>
-
-        {/* Add more options as needed */}
-      </select>
+      {dropdownOpen && (
+        <div className="absolute h-[250px] left-[-130px] top-[50px] bg-[#0D1117] mt-2 rounded-md z-10 w-[200px]">
+          <button
+            onClick={() => handleNavigation("/Profile")}
+            className="w-full p-2.5 text-white hover:bg-[#21262C] rounded-md"
+          >
+            My Profile
+          </button>
+          <button
+            onClick={() => handleNavigation("/ProfilePage")}
+            className="w-full p-2.5 text-white hover:bg-[#21262C] rounded-md"
+          >
+            Edit Profile
+          </button>
+          <button
+            onClick={() => handleNavigation("/friends1")}
+            className="w-full p-2.5 text-white hover:bg-[#21262C] rounded-md"
+          >
+            Friends
+          </button>
+          <button
+            onClick={() => handleNavigation("/Library")}
+            className="w-full p-2.5 text-white hover:bg-[#21262C] rounded-md"
+          >
+            Library
+          </button>
+          <button
+            onClick={() => handleNavigation("/")}
+            className="w-full p-2.5 text-white hover:bg-[#21262C] rounded-md"
+          >
+            Sign out
+          </button>
+        </div>
+      )}
     </div>
   );
 }

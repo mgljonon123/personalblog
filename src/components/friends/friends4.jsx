@@ -7,6 +7,7 @@ import Friends2 from "./friends2";
 import Friends3 from "./friends4";
 import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom";
 import SocialFeed from "../Social/socialFeed/SocialFeed";
+import Post2 from "../post/post2";
 const Friends4 = () => {
   return (
     <>
@@ -30,9 +31,11 @@ const Friends4 = () => {
 
             <div className="justify-center items-center gap-10 flex">
               <div className="justify-center items-center gap-[25px] flex">
-                <div className=" text-black text-xl font-normal font-['Poppins']">
-                  Make Post
-                </div>
+                <Link to={"/Post2"} element={<Post2></Post2>}>
+                  <div className=" text-black text-xl font-normal font-['Poppins']">
+                    Make Post
+                  </div>
+                </Link>
                 <div className="w-6 h-12 relative  overflow-hidden" />
               </div>
               <div className="w-6 h-6 relative  overflow-hidden" />
@@ -41,15 +44,17 @@ const Friends4 = () => {
           </div>
         </div>
 
-        <IoNotificationsOutline className="left-[1705px] top-[15px] absolute text-[27px] text-" />
+        <Link to={"/Notification"} element={<Notification></Notification>}>
+          <IoNotificationsOutline className="left-[1705px] top-[15px] absolute text-[27px] text-" />
+        </Link>
         <LuFilePenLine className="left-[1645px] top-[15px] absolute text-[27px] text-" />
         <IoSearchOutline className="left-[230px] top-[15px] absolute text-3xl text-" />
 
-        <div className="w-[500px] h-[0px] left-[223px] top-[249px] absolute opacity-50 border border-black"></div>
-        <div className="w-[84px] h-[0px] left-[720px] top-[249px] absolute border border-black"></div>
+        <div className="w-[600px] h-[0px] left-[223px] top-[249px] absolute opacity-50 border border-black"></div>
+        <div className="w-[90px] h-[0px] left-[780px] top-[249px] absolute border border-black"></div>
         <div className="w-[802px] h-[455px] left-[220px] top-[305px] absolute flex-col justify-start items-start gap-[30px] inline-flex">
           <div className="self-stretch h-[126px] relative">
-            <div className="w-[80.35px] h-[98.21px] left-0 top-[26.79px] absolute bg-black rounded-full" />
+            <div className="w-[80px] h-[80px] left-0 top-[26.79px] absolute bg-black rounded-[50%]" />
             <div className="w-[227.89px] h-[35.71px] left-[125.63px] top-0 absolute text-black text-[20px] font-normal font-['Poppins']">
               Indra institude Manager
             </div>
@@ -69,9 +74,9 @@ const Friends4 = () => {
             <div className="w-[33px] h-8 left-[413px] top-[2px] absolute opacity-50  overflow-hidden" />
           </div>
           <div className="self-stretch h-[126px] relative">
-            <div className="w-[80.35px] h-[98.21px] left-0 top-[26.79px] absolute bg-black rounded-full" />
+            <div className="w-[80px] h-[80px] left-0 top-[26.79px] absolute bg-black rounded-[50%]" />
             <div className="w-[227.89px] h-[35.71px] left-[125.63px] top-0 absolute text-black text-[20px] font-normal font-['Poppins']">
-              Indra institude Manager
+              Bazraa bagsh
             </div>
             <div className="w-[365px] h-[71px] left-[129px] top-[55px] absolute text-black text-[16px] font-light font-['Poppins']">
               Web development refers to the creating, building, and maintaining

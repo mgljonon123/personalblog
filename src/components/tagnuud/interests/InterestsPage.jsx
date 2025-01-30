@@ -6,16 +6,16 @@ import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom";
 import SocialFeed from "../../Social/socialFeed/SocialFeed";
 import img1 from "./img1.png";
 
-const initialInterests = [
+let initialInterests = [
   { name: "Javascript", selected: false },
   { name: "UX", selected: false },
-  { name: "Social Media", selected: true },
+  { name: "Social Media", selected: false },
   { name: "Self improvement", selected: false },
   { name: "Programming", selected: false },
   { name: "Writing", selected: false },
   { name: "Computer Science", selected: false },
   { name: "Python", selected: false },
-  { name: "Technology", selected: true },
+  { name: "Technology", selected: false },
   { name: "Machine learning", selected: false },
   { name: "Coding", selected: false },
   { name: "Relationships", selected: false },

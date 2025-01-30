@@ -2,6 +2,7 @@ import { useState } from "react";
 import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom";
 import SocialFeed from "../../Social/socialFeed/SocialFeed";
 import img1 from "./img1.png";
+import Signin1page from "../signin1/signin1page";
 function CreateAccount() {
   const [email, setEmail] = useState("");
   const [username, setUsername] = useState("");
@@ -30,9 +31,15 @@ function CreateAccount() {
                   <span className="text-[#333333] text-base font-normal font-['Poppins']">
                     Already have an account?
                   </span>
-                  <span className="text-[#111111] text-base font-normal font-['Poppins'] underline">
-                    Log in
-                  </span>
+                  <Link
+                    to={"/signin1page"}
+                    element={<Signin1page></Signin1page>}
+                  >
+                    {" "}
+                    <span className="text-[#111111] text-base font-normal font-['Poppins'] underline">
+                      Log in
+                    </span>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -150,17 +157,16 @@ function CreateAccount() {
 
             {/* Create Account Button */}
             <div className="h-[100px] flex-col justify-center items-start gap-2 flex ">
-              <button
-                onClick={handleCreateAccount}
-                className="w-[200px] h-16 bg-[#5dade2] rounded-[32px] flex justify-center items-center"
-              >
-                <Link to={"/SocialFeed"} element={<SocialFeed></SocialFeed>}>
+              <Link to={"/SocialFeed"} element={<SocialFeed></SocialFeed>}>
+                <button
+                  onClick={handleCreateAccount}
+                  className="w-[200px] h-16 bg-[#5dade2] rounded-[32px] flex justify-center items-center"
+                >
                   <span className="text-white text-[22px] font-medium font-['Poppins']">
                     Create account
                   </span>
-                </Link>
-              </button>
-
+                </button>
+              </Link>
               <div className="p-0.5 justify-start items-start gap-2.5 inline-flex">
                 <div>
                   <span class="text-[#333333] text-base font-normal font-['Poppins']">

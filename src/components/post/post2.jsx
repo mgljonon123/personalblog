@@ -1,40 +1,49 @@
 import { useState } from "react";
-import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom";
-import { IoSearchOutline } from "react-icons/io5";
+import { useNavigate } from "react-router-dom";
 import { IoNotificationsOutline } from "react-icons/io5";
 import { LuFilePenLine } from "react-icons/lu";
 import { CgAdd } from "react-icons/cg";
 import SocialFeed from "../Social/socialFeed/SocialFeed";
+import { Link } from "react-router-dom";
 
 function Post2() {
   const [title, setTitle] = useState("");
   const [story, setStory] = useState("");
   const [tags, setTags] = useState([]);
   const [image, setImage] = useState(null);
-  const [text, setText] = useState("");
+  const [tagInput, setTagInput] = useState("");
+  const [searchQuery, setSearchQuery] = useState("");
 
-  const handleChange = (event) => {
-    setText(event.target.value);
-  };
+  const navigate = useNavigate();
+
+  localStorage.setItem("title", title);
+  localStorage.setItem("story", story);
+  localStorage.setItem("image", image);
+  localStorage.setItem("tags", tags);
 
   const handlePublish = () => {
     if (title && story && tags.length > 0) {
-      // Save the data to localStorage
-      const postData = {
+      // Get existing posts from localStorage, or initialize an empty array
+      const existingPosts = JSON.parse(localStorage.getItem("posts")) || [];
+
+      // Create the new post
+      const newPost = {
+        id: existingPosts.length + 1,
         title,
         story,
         tags,
         image,
+        avatarColor: "bg-indigo-700", // Default avatar color for new posts
       };
-      localStorage.setItem("post", JSON.stringify(postData));
+
+      // Add the new post to the array of existing posts
+      const updatedPosts = [newPost, ...existingPosts];
+
+      // Save the updated posts array back to localStorage
+      localStorage.setItem("posts", JSON.stringify(updatedPosts));
 
       alert("Post Published!");
-
-      // Display the saved data in the console
-      console.log("Title:", title);
-      console.log("Story:", story);
-      console.log("Tags:", tags);
-      console.log("Image:", image);
+      navigate("/SocialFeed"); // Navigate to the SocialFeed after publishing
     } else {
       alert("Please fill in all fields (title, story, and tags)!");
     }
@@ -50,153 +59,173 @@ function Post2() {
       reader.readAsDataURL(file);
     }
   };
+  const handleAddTag = () => {
+    if (tagInput && !tags.includes(tagInput)) {
+      setTags((prevTags) => [...prevTags, tagInput]);
+      setTagInput(""); // Clear input after adding
+    }
+  };
+
+  const handleTagInputChange = (e) => {
+    setTagInput(e.target.value);
+  };
+
+  const handleSearchChange = (e) => {
+    setSearchQuery(e.target.value);
+  };
 
   return (
-    <>
-      <div className="w-[100%] h-[990px] relative bg-white overflow-hidden">
-        <div className="w-[1903px] h-[65px] left-0 top-0 absolute">
-          <div className="w-[1903px] h-[65px] left-0 top-0 absolute bg-[#d9d9d9]" />
-          <div className="w-[1710.06px] left-[96.47px] top-[5px] absolute justify-between items-center inline-flex">
-            <div className="justify-start items-center gap-9 flex">
-              <div className="text-black text-4xl font-bold font-['Poppins']">
-                Home
-              </div>
-              <div className="justify-start items-center gap-3.5 flex">
-                <div className="w-8 h-9 relative overflow-hidden" />
-                <div className="text-black text-xl font-normal font-['Poppins']">
-                  Search
-                </div>
-              </div>
-            </div>
+    <div className="w-full h-full relative bg-white">
+      {/* Header Navigation */}
+      <div className="w-full h-[65px] bg-gray-200 flex items-center justify-between px-10">
+        <div className="flex items-center gap-6">
+          <Link to={"/SocialFeed"} element={<SocialFeed></SocialFeed>}>
+            <div className="text-4xl font-bold">Home</div>
+          </Link>
 
-            <div className="justify-center items-center gap-10 flex">
-              <div className="justify-center items-center gap-[25px] flex">
-                <div className="text-black text-xl font-normal font-['Poppins']">
-                  Make Post
-                </div>
-                <div className="w-6 h-12 relative overflow-hidden" />
-              </div>
-              <div className="w-6 h-6 relative overflow-hidden" />
-              <div className="w-[42px] h-[42px] bg-[#ca7272] rounded-full" />
-            </div>
+          {/* Search Input */}
+          <div className="relative">
+            <input
+              type="text"
+              value={searchQuery}
+              onChange={handleSearchChange}
+              className="p-2 border rounded bg-gray-100 w-64"
+              placeholder="Search..."
+            />
           </div>
         </div>
-
-        <IoNotificationsOutline className="left-[1705px] top-[15px] absolute text-[27px] text-" />
-        <LuFilePenLine className="left-[1645px] top-[15px] absolute text-[27px] text-" />
-        <IoSearchOutline className="left-[230px] top-[15px] absolute text-3xl text-" />
-
-        <div className="w-[367px] h-[25px] left-[222px] top-[356px] absolute opacity-50 text-black text-[22px] font-normal font-['Inter'] leading-snug">
-          Add Topic for your new Story!
+        <div className="flex items-center gap-8">
+          <Link to="/create-post" className="flex items-center gap-2">
+            <CgAdd className="text-3xl" />
+            <span className="text-xl">Make Post</span>
+          </Link>
+          <Link to={"/Notification"} element={<Notification></Notification>}>
+            <IoNotificationsOutline className="text-3xl" />
+          </Link>
+          <LuFilePenLine className="text-3xl" />
         </div>
+      </div>
 
-        <div className="w-[430px] h-[77.93px] left-[210px] top-[418.74px] absolute">
-          <div className="w-[430px] h-[77.93px] left-0 top-0 absolute bg-[#d9d9d9]" />
-          <textarea
-            value={text}
-            onChange={handleChange}
-            className="w-[150.56px] h-[25.14px] left-[15.66px] top-[26.40px] absolute opacity-50 text-black text-xl font-normal font-['Inter'] leading-tight resize-none"
-            placeholder="Add a topic..."
-          />
-        </div>
-
-        <div>
-          <div className="w-60 h-[0px] left-[717px] top-[336px] absolute origin-top-left rotate-90 border border-black"></div>
-          <div className="w-60 h-[0px] left-[1208px] top-[336px] absolute origin-top-left rotate-90 border border-black"></div>
-          <div className="w-[188px] h-[30px] left-[882px] top-[403px] absolute text-black text-2xl font-normal font-['Inter'] leading-normal">
-            <label
-              htmlFor="image-upload"
-              className="w-[341px] h-[165px] bg-[#d9d9d9] cursor-pointer"
-            >
-              Add Image +
-            </label>
+      {/* Main Content: Split into two sides */}
+      <div className="flex">
+        {/* Left side - Post Form */}
+        <div className="w-1/2 p-10">
+          <div className="mb-5">
+            <label className="text-xl">Title</label>
             <input
-              id="image-upload"
-              type="file"
-              accept="image/*"
-              className="hidden w-[341px] h-[165px] bg-[#d9d9d9]"
-              onChange={handleImageChange}
+              type="text"
+              value={title}
+              onChange={(e) => setTitle(e.target.value)}
+              className="w-full p-2 border rounded bg-gray-200"
+              placeholder="Enter title"
             />
           </div>
 
+          <div className="mb-5">
+            <label className="text-xl">Story</label>
+            <textarea
+              value={story}
+              onChange={(e) => setStory(e.target.value)}
+              className="w-full h-32 p-2 border rounded bg-gray-200"
+              placeholder="Write your story..."
+            />
+          </div>
+
+          <div className="mb-5">
+            <label className="text-xl">Add Image</label>
+            <input type="file" accept="image/*" onChange={handleImageChange} />
+            {image && (
+              <div className="mt-2">
+                <img
+                  src={image}
+                  alt="uploaded"
+                  className="w-72 h-40 object-cover mt-2"
+                />
+              </div>
+            )}
+            {!image && <div className="bg-gray-200 w-72 h-40 mt-2"></div>}
+          </div>
+
+          <div className="mb-5">
+            <label className="text-xl">Add Tags</label>
+            <div className="flex gap-2">
+              <input
+                type="text"
+                value={tagInput}
+                onChange={handleTagInputChange}
+                className="w-full p-2 border rounded bg-gray-200"
+                placeholder="Enter tag"
+              />
+              <button
+                onClick={handleAddTag}
+                className="px-4 py-2 bg-blue-500 text-white rounded"
+              >
+                Add Tag
+              </button>
+            </div>
+            <div className="flex gap-2 mt-2">
+              {tags.map((tag, index) => (
+                <span key={index} className="px-2 py-1 bg-gray-200 rounded">
+                  {tag}
+                </span>
+              ))}
+            </div>
+          </div>
+
+          <Link to={"/SocialFeed"} element={<SocialFeed></SocialFeed>}>
+            <button
+              onClick={handlePublish}
+              className="px-4 py-2 bg-green-500 text-white rounded"
+            >
+              Publish Now
+            </button>
+          </Link>
+        </div>
+
+        {/* Right side - Summary */}
+        <div className="w-1/2 h-full p-10 bg-gray-100">
+          <h2 className="text-2xl font-semibold mb-5">Post Preview</h2>
+
+          {title && (
+            <div className="mb-5">
+              <h3 className="text-xl font-semibold">Title</h3>
+              <p>{title}</p>
+            </div>
+          )}
+
+          {story && (
+            <div className="mb-5">
+              <h3 className="text-xl font-semibold">Story</h3>
+              <p>{story}</p>
+            </div>
+          )}
+
           {image && (
-            <div className="absolute left-[781px] top-[336px]">
+            <div className="mb-5">
+              <h3 className="text-xl font-semibold">Image</h3>
               <img
                 src={image}
                 alt="uploaded"
-                className="w-[341px] h-[165px] object-cover"
+                className="w-72 h-40 object-cover"
               />
             </div>
           )}
-        </div>
 
-        <div className="w-[467px] h-[106px] left-[1318px] top-[341px] absolute justify-start items-start gap-[31px] inline-flex">
-          <div className="justify-center items-center gap-2.5 flex">
-            <div className="text-black text-xl font-normal font-['Poppins']">
-              Javascript
-            </div>
-            <div className="w-6 h-6 relative overflow-hidden" />
-          </div>
-          <div className="justify-center items-center gap-2.5 flex">
-            <div className="text-black text-xl font-normal font-['Poppins']">
-              Javascript
-            </div>
-            <div className="w-6 h-6 relative overflow-hidden" />
-          </div>
-          <div className="justify-center items-center gap-2.5 flex">
-            <div className="text-black text-xl font-normal font-['Poppins']">
-              Javascript
-            </div>
-            <div className="w-6 h-6 relative overflow-hidden" />
-          </div>
-        </div>
-
-        <CgAdd className="left-[1700px] top-[344px] absolute text-2xl text-" />
-        <CgAdd className="left-[1555px] top-[344px] absolute text-2xl text-" />
-        <CgAdd className="left-[1405px] top-[343px] absolute text-2xl text-" />
-
-        <div className="w-[1255px] h-[60px] left-[324px] top-[219px] absolute">
-          <div className="left-[-106px] top-[8px] absolute text-black text-[32px] font-normal font-['Inter'] leading-loose">
-            Published ZoloB
-          </div>
-          <div className="left-[538px] top-[5px] absolute text-black text-[32px] font-normal font-['Inter']">
-            Add Images
-          </div>
-          <div className="left-[1072px] top-0 absolute text-black text-[32px] font-normal font-['Poppins']">
-            Add Tags:
-          </div>
-        </div>
-
-        <div className="w-[358px] h-[87px] left-[1305px] top-[678px] absolute">
-          <div
-            className="w-[358px] h-[87px] left-0 top-0 absolute bg-[#20b150] border border-black cursor-pointer"
-            onClick={handlePublish}
-          >
-            <Link to={"/SocialFeed"} element={<SocialFeed></SocialFeed>}>
-              <div className="left-[95px] top-[9px] absolute text-white text-[32px] font-normal font-['Inter'] leading-loose">
-                Publish now
-              </div>
-            </Link>
-          </div>
-        </div>
-
-        {/* Хадгалагдсан мэдээллүүдийг харуулах */}
-        <div className="published-content">
-          {title && <h2>{title}</h2>}
-          {story && <p>{story}</p>}
           {tags.length > 0 && (
-            <div>
-              <h4>Tags:</h4>
-              <ul>
+            <div className="mb-5">
+              <h3 className="text-xl font-semibold">Tags</h3>
+              <div className="flex gap-2">
                 {tags.map((tag, index) => (
-                  <li key={index}>{tag}</li>
+                  <span key={index} className="px-2 py-1 bg-gray-300 rounded">
+                    {tag}
+                  </span>
                 ))}
-              </ul>
+              </div>
             </div>
           )}
         </div>
       </div>
-    </>
+    </div>
   );
 }
 

@@ -1,5 +1,7 @@
 import React from "react";
-
+import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom";
+import SocialFeed from "../components/Social/socialFeed/SocialFeed";
+import Post2 from "../components/post/post2";
 const Mainpage = () => {
   return (
     <div className="w-[1903px] h-[990px] relative bg-white  overflow-hidden">
@@ -274,9 +276,11 @@ const Mainpage = () => {
         <div className="w-[1903px] h-[55.27px] left-0 top-0 absolute bg-[#d9d9d9]" />
         <div className="w-[1710.06px] left-[96.47px] top-[0.21px] absolute justify-between items-center inline-flex">
           <div className="justify-start items-center gap-9 flex">
-            <div className="text-black text-4xl font-bold font-['Poppins']">
-              Home
-            </div>
+            <Link to={"/SocialFeed"} element={<SocialFeed></SocialFeed>}>
+              <div className="text-black text-4xl font-bold font-['Poppins']">
+                Home
+              </div>
+            </Link>
             <div className="justify-start items-center gap-3.5 flex">
               <div className="w-6 h-6 relative  overflow-hidden" />
               <div className="text-black text-xl font-normal font-['Poppins']">
@@ -286,9 +290,11 @@ const Mainpage = () => {
           </div>
           <div className="justify-center items-center gap-10 flex">
             <div className="justify-center items-center gap-[17px] flex">
-              <div className="text-black text-xl font-normal font-['Poppins']">
-                Make Post
-              </div>
+              <Link to={"/Post2"} element={<Post2></Post2>}>
+                <div className="text-black text-xl font-normal font-['Poppins']">
+                  Make Post
+                </div>
+              </Link>
               <div className="w-6 h-6 relative  overflow-hidden" />
             </div>
             <div className="w-6 h-6 relative  overflow-hidden" />

@@ -4,6 +4,7 @@ import { LuFilePenLine } from "react-icons/lu";
 import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom";
 import BlogPage from "../components/blog/BlogPage";
 import SocialFeed from "../Social/socialFeed/SocialFeed";
+import Post2 from "../post/post2";
 function Notification() {
   return (
     <>
@@ -28,9 +29,11 @@ function Notification() {
 
             <div className="justify-center items-center gap-10 flex">
               <div className="justify-center items-center gap-[25px] flex">
-                <div className=" text-black text-xl font-normal font-['Poppins']">
-                  Make Post
-                </div>
+                <Link to={"/Post2"} element={<Post2></Post2>}>
+                  <div className=" text-black text-xl font-normal font-['Poppins']">
+                    Make Post
+                  </div>
+                </Link>
                 <div className="w-6 h-12 relative  overflow-hidden" />
               </div>
               <div className="w-6 h-6 relative  overflow-hidden" />
@@ -39,7 +42,9 @@ function Notification() {
           </div>
         </div>
 
-        <IoNotificationsOutline className="left-[1705px] top-[15px] absolute text-[27px] text-" />
+        <Link to={"/Notification"} element={<Notification></Notification>}>
+          <IoNotificationsOutline className="left-[1705px] top-[15px] absolute text-[27px] text-" />
+        </Link>
         <LuFilePenLine className="left-[1645px] top-[15px] absolute text-[27px] text-" />
         <IoSearchOutline className="left-[230px] top-[15px] absolute text-3xl text-" />
 

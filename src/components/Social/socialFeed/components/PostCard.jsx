@@ -1,5 +1,3 @@
-import * as React from "react";
-
 export function PostCard({ avatarColor, imageUrl, interactions }) {
   // Retrieve data from localStorage
   const story = localStorage.getItem("story") || "Default story text.";
@@ -30,7 +28,7 @@ export function PostCard({ avatarColor, imageUrl, interactions }) {
                   <div className="grow">Suzulaab</div>
                   <div className="shrink-0 self-start mt-6 w-full h-px border border-black border-solid" />
                 </div>
-                <h2 className="self-stretch mt-3 font-bold text-lg">{title}</h2>
+                <h2 className="self-stretch mt-3  text-lg">{title}</h2>
                 <p className="self-stretch mt-3 font-[250]">{story}</p>
                 {tags.length > 0 && (
                   <div className="mt-2 flex gap-2">

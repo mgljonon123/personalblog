@@ -7,6 +7,9 @@ import Friends2 from "./friends2";
 import Friends3 from "./friends3";
 import Friends4 from "./friends4";
 import Notification from "../notification/notification";
+import SocialFeed from "../Social/socialFeed/SocialFeed";
+import Post2 from "../post/post2";
+import SidebarNavigation from "../../SidebarNavigation";
 function Friends1() {
   return (
     <>
@@ -15,9 +18,11 @@ function Friends1() {
           <div className="w-[1903px] h-[65px] left-0 top-0 absolute bg-[#d9d9d9]" />
           <div className="w-[1710.06px] left-[96.47px] top-[5px] absolute justify-between items-center inline-flex">
             <div className="justify-start items-center gap-9 flex">
-              <div className="text-black text-4xl font-bold font-['Poppins']">
-                Home
-              </div>
+              <Link to={"/SocialFeed"} element={<SocialFeed></SocialFeed>}>
+                <div className="text-black text-4xl font-bold font-['Poppins']">
+                  Home
+                </div>
+              </Link>
               <div className="justify-start items-center gap-3.5 flex">
                 <div className="w-8 h-9 relative  overflow-hidden" />
                 <div className="text-black text-xl font-normal font-['Poppins']">
@@ -28,13 +33,17 @@ function Friends1() {
 
             <div className="justify-center items-center gap-10 flex">
               <div className="justify-center items-center gap-[25px] flex">
-                <div className=" text-black text-xl font-normal font-['Poppins']">
-                  Make Post
-                </div>
+                <Link to={"/Post2"} element={<Post2></Post2>}>
+                  <div className=" text-black text-xl font-normal font-['Poppins']">
+                    Make Post
+                  </div>
+                </Link>
                 <div className="w-6 h-12 relative  overflow-hidden" />
               </div>
               <div className="w-6 h-6 relative  overflow-hidden" />
-              <div className="w-[42px] h-[42px] bg-[#ca7272] rounded-full" />
+              <div>
+                <SidebarNavigation></SidebarNavigation>
+              </div>
             </div>
           </div>
         </div>

@@ -12,10 +12,8 @@ export function ProfileBanner() {
           loading="lazy"
           src="https://cdn.builder.io/api/v1/image/assets/TEMP/65c9cc695be0b087509e939829727182a720dc9f69677161ce208ad5631a1308?placeholderIfAbsent=true&apiKey=8947fdbc91b3418387184c18824db628"
           alt="Profile banner"
-          className="object-contain w-full aspect-[10.2] max-md:max-w-full"
+          className="object-contain w-full aspect-[10.2] max-md:max-w-full top-[60px] absolute z-0"
         />
-        <div className="w-full border-2 border-solid border-gray-200 border-opacity-40 min-h-[2px] max-md:max-w-full" />
-        <div className="w-full border-2 border-solid border-gray-200 border-opacity-40 min-h-[2px] max-md:max-w-full" />
       </div>
       <div className="flex flex-wrap gap-10 items-end px-20 w-full font-bold text-sky-950 max-md:px-5 max-md:max-w-full">
         <img
